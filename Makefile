@@ -1,10 +1,13 @@
-NAME=cv
+all: cv resume
 
-all:
-	latexmk -pdf ${NAME}.tex
+cv:
+	latexmk -pdf cv.tex
+
+resume:
+	latexmk -pdf resume.tex
 
 clean:
-	rm -f ${NAME}.aux ${NAME}.bbl ${NAME}.bcf ${NAME}.fdb_latexmk ${NAME}.fls ${NAME}.log ${NAME}.out ${NAME}.run.xml ${NAME}.blg ${NAME}.toc *\~
+	rm -f *.aux *.bbl *.bcf *.fdb_latexmk *.fls *.log *.out *.run.xml *.blg *.toc *~
 
 distclean: clean
-	rm -f ${NAME}.pdf
+	rm -f cv.pdf resume.pdf
