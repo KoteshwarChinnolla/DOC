@@ -23,6 +23,10 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{ifthen}
+\usepackage{textcase}
+\usepackage{microtype}  
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
 
 \IfFileExists{fontawesome5.sty}{%
   \usepackage{fontawesome5}
@@ -66,6 +70,7 @@
 %   CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
 \newcommand{\cventry}[5][]{%
+  \begin{samepage}
   \begin{tabularx}{\linewidth}{@{}X r@{}}
     \textbf{#2} \textit{\small\color{lightgray}#3} & \small\color{lightgray}#4 \ifthenelse{\equal{#1}{}}{}{\hspace{0.3em}\textcolor{accent}{#1}} \\
   \end{tabularx}%
@@ -74,6 +79,7 @@
     #5
   \end{itemize}
   \vspace{4pt}
+  \end{samepage}
 }
 
 \newcommand{\cventrynobullet}[3]{%
@@ -98,47 +104,90 @@
 %----------------------------------------------------------------------------------------
 %   HEADER
 %----------------------------------------------------------------------------------------
-\begin{center}
-  {\LARGE\bfseries Chinnolla Koteshwar}\\[6pt]
-  \small
-  \textcolor{accent}{\href{mailto:chinnollakoteshwar@gmail.com}{\EmailIcon chinnollakoteshwar@gmail.com}} \quad
-  \textcolor{accent}{\href{tel:+916300727875}{\PhoneIcon +91 6300727875}} \quad
-  \textcolor{accent}{\href{https://www.linkedin.com/in/koteshwar-chinnolla-2065b4253}{\LinkedInIcon ln/koteshwar-chinnolla}} \quad
-  \textcolor{accent}{\href{https://github.com/KoteshwarChinnolla}{\GitHubIcon KoteshwarChinnolla}} \quad
-  \textcolor{accent}{\href{https://koteshwarchinnolla.github.io/}{\WebIcon koteshwarchinnolla.github.io}} \quad
-%   \textcolor{accent}{\href{https://x.com/Iam_Koteshwar}{\XIcon @Iam_Koteshwar}}
-\end{center}
-%----------------------------------------------------------------------------------------
-%   PROFESSIONAL SUMMARY
-%----------------------------------------------------------------------------------------
-\section{Professional Summary}
+\newcommand{\DetailLabel}[1]{\small\textcolor{lightgray}{\textbf{#1}}}
+\newcommand{\DetailValue}[1]{\small #1}
 
-Electronics and Communication Engineering graduate with a minor in Artificial Intelligence and Machine Learning, with research experience in autonomous robotics and natural language-driven intelligent systems. My academic work focuses on integrating language models with decision-making systems for real-world robotic applications. Alongside research, I have over one year of experience in backend engineering, cloud infrastructure, and scalable AI system deployment.
+\begin{minipage}[t]{0.70\linewidth}
+  \vspace{0pt}
+
+  {\LARGE\bfseries Chinnolla Koteshwar}\\[3pt]
+  {\color{accent}\rule{44pt}{2.5pt}}\\[14pt]
+
+  \begin{tabular}{@{} l @{\hspace{3pt}} l @{\hspace{20pt}} l @{\hspace{6pt}} l @{}}
+    \DetailLabel{Date of birth}   & \DetailValue{21 March 2004}
+      & \DetailLabel{Email}     & \DetailValue{\href{mailto:chinnollakoteshwar@gmail.com}{chinnollakoteshwar@gmail.com}} \\[4pt]
+
+    \DetailLabel{Place of birth}  & \DetailValue{Hyderabad, India}
+      & \DetailLabel{Phone}     & \DetailValue{\href{tel:+916300727875}{+91 6300727875}} \\[4pt]
+
+    \DetailLabel{Nationality}     & \DetailValue{Indian}
+      & \DetailLabel{LinkedIn}  & \DetailValue{\href{https://linkedin.com/in/koteshwar-chinnolla-2065b4253}{ln/koteshwar-chinnolla}} \\[4pt]
+
+    \DetailLabel{Gender}          & \DetailValue{Male}
+      & \DetailLabel{GitHub}    & \DetailValue{\href{https://github.com/KoteshwarChinnolla}{KoteshwarChinnolla}} \\[4pt]
+
+    \DetailLabel{Marital status}  & \DetailValue{Single}
+      & \DetailLabel{Portfolio} & \DetailValue{\href{https://koteshwarchinnolla.github.io}{koteshwarchinnolla.github.io}} \\
+  \end{tabular}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.26\linewidth}
+  \vspace{0pt}
+  \raggedleft
+  \setlength{\fboxsep}{0pt}
+  \includegraphics[width=3.2cm, height=4.5cm]{assets/pasport_size_image.jpg}
+\end{minipage}
+
+\vspace{10pt}
+\vspace{2pt}
+%----------------------------------------------------------------------------------------
+%   RESEARCH PROFILE
+%----------------------------------------------------------------------------------------
+\section{Research Profile}
+
+Electronics and Communication Engineering graduate with a minor in Artificial Intelligence and
+Machine Learning, with research experience in autonomous robotics and natural language-driven
+intelligent systems. My academic work focuses on integrating language models with decision-making
+systems for real-world robotic applications. Alongside research, I have over one year of experience
+in backend engineering, cloud infrastructure, and scalable AI system deployment.
+
+\section{Research Interests}
+
+\begin{tabularx}{\linewidth}{@{} *{4}{>{\centering\arraybackslash}X} @{}}
+  
+  \small\textbf{Autonomous Robotics} &
+  \small\textbf{Natural Language Systems} &
+  \small\textbf{Reinforcement Learning} \\[6pt]
+  \small\textbf{Intelligent Agents} &
+  \small\textbf{Computer Vision} &
+  \small\textbf{Autonomous Systems} \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%   RESEARCH INTERESTS
-%----------------------------------------------------------------------------------------
-\textbf{Research Interests}
-
-Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intelligent Agents, Edge AI, Human--Machine Interaction.
-
-%----------------------------------------------------------------------------------------
-%  RELEVANT COURSEWORK
+%   RELEVANT COURSEWORK
 %----------------------------------------------------------------------------------------
 \section{Relevant Coursework}
 
-\vspace{-4pt}
-\begin{multicols}{2}
-  \begin{itemize}[nosep, leftmargin=1.2em, itemsep=4pt, label={\small\textbullet}]
-    \item \textbf{AI \& Machine Learning:} Artificial Neural Networks, Machine Learning, Python
-    \item \textbf{Computer Science:} Data Structures, Object-Oriented Programming (Java), Cloud Computing, DBMS
-    \item \textbf{IoT \& Embedded Systems:} Internet of Things, Microcontrollers
-    \item \textbf{Mathematics:} Linear Algebra, Differential Calculus, Probability \& Stochastic Processes
-    \item \textbf{Control \& Signals:} Linear Control Systems, Digital Signal Processing, Signals \& Systems
-    \item \textbf{Core Electronics:} Analog \& Digital Circuits, VLSI, Networks
-  \end{itemize}
-\end{multicols}
-\vspace{2pt}
+\vspace{4pt}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}l X @{}}
+  
+  AI \& Machine Learning    & Artificial Neural Networks, Machine Learning, Python \\
+  
+  Computer Science          & Data Structures, Object-Oriented Programming (Java), Cloud Computing, DBMS \\
+  
+  IoT \& Embedded Systems   & Internet of Things, Microcontrollers \\
+  
+  Mathematics               & Linear Algebra, Differential Calculus, Probability \& Stochastic Processes \\
+  
+  Control \& Signals        & Linear Control Systems, Digital Signal Processing, Signals \& Systems \\
+  
+  Core Electronics          & Analog \& Digital Circuits, VLSI, Networks \\
+  
+\end{tabularx}
+\renewcommand{\arraystretch}{1}
+\vspace{4pt}
 %----------------------------------------------------------------------------------------
 %   EDUCATION
 %----------------------------------------------------------------------------------------
@@ -180,7 +229,7 @@ Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intellige
   \textit{``Natural Language Based Autonomous Navigation Vehicle,''}
   in \textit{Proc. 2025 International Conference on Computing Technologies (ICOCT)},
   Bengaluru, India, 2025, pp. 1--7. \\[8pt] \vspace{8pt}
-  
+
   & \small
     \textcolor{accent}{\textbf{DOI:}}
     \href{https://doi.org/10.1109/ICOCT64433.2025.11118685}{\texttt{10.1109/ICOCT64433.2025.11118685}}
@@ -202,12 +251,13 @@ Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intellige
   \item Created reusable open-source Terraform modules and Helm charts for production-ready cloud deployments.
 }
 
-\pagebreak
+
 
 %----------------------------------------------------------------------------------------
 %   PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
+\vspace{4pt}
 
 \cventry[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\GitHubIcon}]{ApiSynIQ}{\normalfont\small Go, Python, Java, gRPC, PostgreSQL (pgvector), LangChain, LangGraph}{}{\item Developed a multi-service framework for natural language interaction with REST APIs, that lets users interact with APIs using natural voice or text instead of traditional forms.
   \item Designed a multi-service architecture to understand user intent, identify the right endpoint, and generate valid API requests automatically.
@@ -231,12 +281,13 @@ Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intellige
   \item Built models from the ground up to study internal behavior of each technique rather than treating them as black-box libraries.
 }
 
+\pagebreak
 \cventry[\href{https://github.com/KoteshwarChinnolla/open-cv}{\GitHubIcon}]{OpenCV Computer Vision Learning Repository}{\normalfont\small Python, OpenCV, YOLOv8, NumPy}{}{\item Built a practical computer vision repository exploring core image processing concepts and real-time object detection workflows.
   \item Developed a vehicle counting system using line-cross detection and object tracking to monitor cars in video streams.
   \item Integrated YOLOv8-based object detection on images and videos to study modern deep learning approaches in computer vision.
 }
 
-\pagebreak
+
 %----------------------------------------------------------------------------------------
 %   TECHNICAL SKILLS
 %----------------------------------------------------------------------------------------
@@ -291,14 +342,12 @@ Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intellige
   \textbf{Language Proficiency – English} & \textbf{2026} \\
   \textit{\color{lightgray}IELTS} & \small\color{lightgray}6.5 \\
 \end{tabularx}
-
-
-\section{Certifications}
-
 \begin{tabularx}{\linewidth}{@{}X r@{}}
-  \textbf{AWS Cloud Practitioner} & \textbf{2024} \\
-  \textit{\color{lightgray}AWS Skill Builder} & \small\color{lightgray}Completed \\
+  \textbf{Language Proficiency – Telugu} & \textbf{ } \\
+  \textit{\color{lightgray}Native} & \small\color{lightgray}N/A \\
 \end{tabularx}
-
-
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Language Proficiency – Hindi} & \textbf{} \\
+  \textit{\color{lightgray}Fluent} & \small\color{lightgray}N/A \\
+\end{tabularx}
 \end{document}

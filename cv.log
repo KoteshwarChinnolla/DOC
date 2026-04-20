@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.19)  20 APR 2026 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.19)  20 APR 2026 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,6 +418,34 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen197
+\Gin@req@width=\dimen198
+)
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks27
+\minrowclearance=\skip60
+\rownum=\count318
+)
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
 e5.sty
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
@@ -426,7 +454,7 @@ Package: expl3 2025-12-24 L3 programming layer (loader)
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
+\l__color_backend_stack_int=\count319
 ))
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 
@@ -445,41 +473,41 @@ tawesome5
 
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
 e5-mapping.def)))
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
-Package hyperref Info: Option `breaklinks' set `true' on input line 52.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 95
-.
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+Package hyperref Info: Option `breaklinks' set `true' on input line 56.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
+1.
 
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Info: Redefining \microtypecontext on input line 95.
-Package microtype Info: Applying patch `item' on input line 95.
-Package microtype Info: Applying patch `toc' on input line 95.
-Package microtype Info: Applying patch `eqnum' on input line 95.
-Package microtype Info: Applying patch `footnote' on input line 95.
-Package microtype Info: Applying patch `verbatim' on input line 95.
-LaTeX Info: Redefining \microtypesetup on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Info: Redefining \microtypecontext on input line 101.
+Package microtype Info: Applying patch `item' on input line 101.
+Package microtype Info: Applying patch `toc' on input line 101.
+Package microtype Info: Applying patch `eqnum' on input line 101.
+Package microtype Info: Applying patch `footnote' on input line 101.
+Package microtype Info: Applying patch `verbatim' on input line 101.
+LaTeX Info: Redefining \microtypesetup on input line 101.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -498,18 +526,28 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen197
+\scratchcounter=\count320
+\scratchdimen=\dimen199
 \scratchbox=\box104
-\nofMPsegments=\count320
-\nofMParguments=\count321
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen198
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
-\everyMPtoPDFconversion=\toks28
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen256
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks29
 )
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -544,77 +582,93 @@ ii
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 95.
+Package hyperref Info: Link coloring ON on input line 101.
 (cv.out) (cv.out)
 \@outlinefile=\write3
 \openout3 = `cv.out'.
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 104.
 
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
-mefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 105.
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
-mefree2.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 106.
+ []
 
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
-mebrands0.fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
-available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 106.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-33.
-
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+16.
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd)
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd)
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd)
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+16.
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+116.
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+116.
+
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 116.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 116.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 116.
+<assets/pasport_size_image.jpg, id=56, 903.375pt x 1204.5pt>
+File: assets/pasport_size_image.jpg Graphic file (type jpg)
+<use assets/pasport_size_image.jpg>
+Package pdftex.def Info: assets/pasport_size_image.jpg  used on input line 139.
+
+(pdftex.def)             Requested size: 91.04579pt x 128.02927pt.
+
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd) [1
 
 {C:/Users/EDIFY/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/EDIF
 Y/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/EDIFY/Ap
-pData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}{C:/Users
-/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}
-{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5b
-rands0.enc}{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
-ts1.enc}{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
-hsy.enc}] [2] [3] (cv.aux)
+pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./assets/pasport
+_size_image.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+52.
+ (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
+mebrands0.fd) [2{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-ts1.enc}{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/font
+awesome5/fa5brands0.enc}] [3] (cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 4222BDAC50D8132B5CCF281392AF9C73;1480.
+(rerunfilecheck)             Checksum: 53979A6A71B7B7F43BFB1FB20841D85B;1483.
  ) 
 Here is how much of TeX's memory you used:
- 15876 strings out of 467871
- 273985 string characters out of 5418376
- 727559 words of memory out of 5000000
- 44421 multiletter control sequences out of 15000+600000
- 691072 words of font info for 144 fonts, out of 8000000 for 9000
+ 16324 strings out of 467871
+ 281460 string characters out of 5418376
+ 736489 words of memory out of 5000000
+ 44858 multiletter control sequences out of 15000+600000
+ 690185 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,9n,84p,1193b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,10n,84p,1193b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5
 /FontAwesome5Brands-Regular.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/EDIFY/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/EDIFY/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/EDIFY/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/EDIFY/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/EDIFY/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/EDIFY/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on cv.pdf (3 pages, 194230 bytes).
+onts/type1/public/lm/lmbx10.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmbx12.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmr10.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmri10.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmsy10.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmtt10.pfb>
+Output written on cv.pdf (3 pages, 312648 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
- 37473 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 37478 words of extra memory for PDF output out of 42996 (max. 10000000)
 
