@@ -1,68 +1,91 @@
-%----------------------------------------------------------------------------------------
-% Chinnolla Koteshwar - Resume (Cleaned Version)
-% Based on NIT Patna Resume Template v2.1
-% Original Author: Pavan Kumar Dubasi
-% Modified for clarity and relevance
-%----------------------------------------------------------------------------------------
+% 
+% NIT Patna Resume Template v2.1
+% Author: Pavan Kumar Dubasi
+% NIT Patna - IMSc., Mathematics (2019-24)
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% 
 
 \documentclass[a4paper,11pt]{article}
 
-%----------------------------------------------------------------------------------------
-% Essential Packages
-%----------------------------------------------------------------------------------------
-\usepackage[T1]{fontenc}          % Use T1 font encoding for better output
-\usepackage[utf8]{inputenc}       % Input encoding for UTF-8
-\usepackage[expansion=false]{microtype}            % Improves typography, avoid font expansion on non-scalable fonts
-\usepackage{xcolor}               % Color support
-\usepackage{tabularx}             % Extended table environments
-\usepackage{array}                % Enhanced array and tabular functionality
-\usepackage{enumitem}             % Customizable lists
-\usepackage{geometry}             % Page layout
-\usepackage[most]{tcolorbox}      % Colored boxes for sections
-\usepackage[hidelinks]{hyperref}  % Hyperlinks without borders
-\usepackage{graphicx}             % Include graphics
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{array} % Required for vertical centering in tables
 
-%----------------------------------------------------------------------------------------
-% Color Definitions
-%----------------------------------------------------------------------------------------
+% Color definitions
 \definecolor{darkblue}{RGB}{0,0,139}
 
-%----------------------------------------------------------------------------------------
-% Page Layout
-%----------------------------------------------------------------------------------------
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-\pagestyle{empty}  % No page numbers or headers
+% Page layout - Optimized for 1 page
+\geometry{left=1.2cm, top=0.8cm, right=1.2cm, bottom=0.8cm}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.1pt}
 
-%----------------------------------------------------------------------------------------
-% Hyperlink Setup
-%----------------------------------------------------------------------------------------
-\hypersetup{
-    colorlinks=true,
-    linkcolor=darkblue,
-    filecolor=darkblue,
-    urlcolor=darkblue,
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
 }
 
-%----------------------------------------------------------------------------------------
-% Custom Commands
-%----------------------------------------------------------------------------------------
-% Resume item for lists
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
 \newcommand{\resumeItem}[2]{
   \item{
     \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
   }
 }
 
-% Resume subheading for positions
 \newcommand{\resumePOR}[3]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
     \end{tabular*}
     \vspace{-2mm}
 }
 
-% Resume subheading for experience
 \newcommand{\resumeSubheading}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -72,7 +95,6 @@
     \vspace{-2.4mm}
 }
 
-% Resume project entry
 \newcommand{\resumeProject}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -82,20 +104,18 @@
     \vspace{-2.4mm}
 }
 
-% Resume sub-item for skills
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-% List start commands
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0.5em]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm,rightmargin=2ex]}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=0.5em,itemsep=0.5mm]}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
 
-% List end commands
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.2mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
-
-% Section header with colored box
 \newcommand{\cvsection}[1]{%
 \vspace{2mm}
 \begin{tcolorbox}
@@ -104,21 +124,15 @@
     \vspace{-4mm}
 }
 
-% Column types for tables
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
 
-% Icon sizing
-% (FontAwesome icon commands removed to avoid non-scalable font issues.)
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} 
 
-% Font options (commented out as not used)
-% \newcommand{\headerfonti}{\fontfamily{phv}\selectfont}
-% etc.
-
-%----------------------------------------------------------------------------------------
-% Personal Information
-%----------------------------------------------------------------------------------------
+% Define personal information
+%----------------- PERSONAL INFORMATION --------------------
 \newcommand{\name}{Chinnolla Koteshwar}
 \newcommand{\roll}{}
 \newcommand{\phone}{6300727875}
@@ -126,30 +140,22 @@
 \newcommand{\github}{KoteshwarChinnolla}
 \newcommand{\linkedin}{koteshwar-chinnolla-2065b4253}
 
-%----------------------------------------------------------------------------------------
-% Document Body
-%----------------------------------------------------------------------------------------
 \begin{document}
-\fontfamily{cmr}\selectfont  % Use Computer Modern Roman font
+\fontfamily{cmr}\selectfont
 
-%----------------------------------------------------------------------------------------
-% Header Section
-%----------------------------------------------------------------------------------------
+%----------------- HEADING --------------------
 \begin{tabularx}{\linewidth}{X r}
   {\LARGE \textbf{\name}} & \href{mailto:\email}{\email}\\
-  Associate Software Engineer & +91-\phone\\
-  Anasol Consultancy Services & \href{https://www.linkedin.com/in/\linkedin}{linkedin/\linkedin}\\
-  \href{https://koteshwarchinnolla.github.io/}{portfolio} & \href{https://github.com/\github}{github.com/\github}\\
-\end{tabularx}
-\vspace{2mm}
-\hrule
+  Associate Software Engineer &  +91-\phone\\
+  Anasol Consultancy Services & \href{https://www.linkedin.com/in/\linkedin}{linkedin/\linkedin} \\ \roll  \href{https://koteshwarchinnolla.github.io/}{portfolio} & \href{https://github.com/\github}{github.com/\github} \\
+  \end{tabularx}
 \vspace{1mm}
+\hrule
+\vspace{2mm}
 
-%----------------------------------------------------------------------------------------
-% Education Section
-%----------------------------------------------------------------------------------------
+%----------------- EDUCATION --------------------
 \section*{Education}
-\renewcommand{\arraystretch}{1.2}
+\renewcommand{\arraystretch}{1.15} % Slightly compressed for space
 \setlength{\tabcolsep}{8pt}
 \begin{tabularx}{\textwidth}{|X|X|c|c|}
   \hline
@@ -166,102 +172,88 @@
   9.8/10 & March 2019 \\
   \hline
 \end{tabularx}
+\vspace{-2mm}
 
-%----------------------------------------------------------------------------------------
-% Experience Section
-%----------------------------------------------------------------------------------------
+%----------------- EXPERIENCE --------------------
 \section{\textbf{Experience}}
-\vspace{-0.4mm}
 \resumeSubHeadingListStart
 \resumeSubheading
-    {Anasol Consultancy Services}{Hyderabad, India}
+    {Anasol Consultancy Services [\href{https://anasol.co.in/}{\faIcon{globe}}]}{Hyderabad, India}
     {Associate Software Engineer}{Apr 2025 -- Present}
     \resumeItemListStart
       \item Contributed to production-grade ERP systems (products and software modules) and a job recommendation platform.
-      \item Worked with Kubernetes, LangChain, Kafka, Redis, Docker, CI/CD pipelines, and AWS Lambda to build and deploy scalable backend services.
+      \item Worked with Kubernetes, LangChain, Kafka, Redis, Docker, CI/CD pipelines, and AWS Lambda to build scalable backend services.
     \resumeItemListEnd
 \resumeSubHeadingListEnd
+\vspace{-2mm}
 
-\vspace{-6mm}
-
-%----------------------------------------------------------------------------------------
-% Projects Section
-%----------------------------------------------------------------------------------------
+%----------------- PROJECTS --------------------
 \section{\textbf{Projects}}
-\vspace{-0.4mm}
 \resumeSubHeadingListStart
 
 \resumeProject
     {ApiSynIQ – Talk to Your APIs}
-    {Deep Agents, Go (net/http, Gorilla WebSocket), LangChain, RAG, Spring AI, gRPC, TTS, STT}
-    {}
-    {{}[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\textcolor{darkblue}{GitHub}}]}
+    {Deep Agents, Go, LangChain, RAG, Spring AI, gRPC, TTS, STT}
+    {Nov 2025}
+    {{}[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\textcolor{darkblue}{\faGithub}}]}
 \resumeItemListStart
     \item Built a voice-driven AI assistant that enables natural language interaction with APIs, eliminating the need for complex UIs by automatically planning API calls and filling parameters.
-    \item Implemented Deep Agents for API execution planning and an API-resolver sub-agent using LangChain; enabled inter-service communication via gRPC and integrated RAG in Spring Boot with a reusable Java dependency for seamless adoption in any Java application.
+    \item Implemented Deep Agents for API execution planning and an API-resolver sub-agent using LangChain; enabled inter-service communication via gRPC and integrated RAG in Spring Boot.
 \resumeItemListEnd
 
 \resumeProject
     {Robotic Vehicle for Autonomous Navigation}
     {Agentic AI, Deep Agents, LangChain, LangGraph, Raspberry Pi, Arduino, Docker}
-    {}
-    {{}[\href{https://github.com/KoteshwarChinnolla/A-algorithm-Autonomous-navigatioon-vehicle-.git}{\textcolor{darkblue}{GitHub}}]}
+    {Jan 2024}
+    {{}[\href{https://github.com/KoteshwarChinnolla/A-algorithm-Autonomous-navigatioon-vehicle-.git}{\textcolor{darkblue}{\faGithub}}]}
 \resumeItemListStart
     \item Developed an autonomous robotic vehicle capable of task planning, human communication, and object transport using natural language instructions.
-    \item Implemented A* algorithm for optimal path planning and Deep Agents for natural language understanding, deployed on Raspberry Pi OS with Arduino-based motor control.
+    \item Implemented A* algorithm for optimal path planning and Deep Agents for natural language understanding, deployed on Raspberry Pi OS.
 \resumeItemListEnd
 
 \resumeProject
     {Open-source Helm charts and Terraform modules}
     {Tools: Terraform, Kubernetes, AWS}
-    {}
+    {June 2025 - current}
     {{}}
 \resumeItemListStart
-    \item Maintaining reusable Helm charts for Kafka, Redis, and AWS infrastructure components [\href{https://github.com/KoteshwarChinnolla/helm-utilities}{\textcolor{darkblue}{GitHub}}]
-    \item Managing Terraform repositories for AWS workloads including Kubernetes, S3, CloudFront, and Route53 [\href{https://github.com/KoteshwarChinnolla/terraform-modules}{\textcolor{darkblue}{GitHub}}]
+    \item Maintaining the repository which has production-grade Helm charts for Kafka, Redis, Certificate authorities' [\href{https://github.com/KoteshwarChinnolla/helm-utilities}{\textcolor{darkblue}{\faGithub}}]
+    \item Opensource Repository for managing AWS workloads with Terraform like Kubernetes, S3 buckets, Web Hosting life cycle using Cloud Front, S3 and Route53, etc. [\href{https://github.com/KoteshwarChinnolla/terraform-modules}{\textcolor{darkblue}{\faGithub}}]
 \resumeItemListEnd
-\resumeSubHeadingListEnd
-\vspace{-8mm}
 
-%----------------------------------------------------------------------------------------
-% Skills Section
-%----------------------------------------------------------------------------------------
+\resumeSubHeadingListEnd
+\vspace{-2mm}
+
+%----------------- SKILLS --------------------
 \section{\textbf{Skills}}
-\vspace{-0.4mm}
 \resumeHeadingSkillStart
 \resumeSubItem{Programming Languages}{: Java, Python, CPP, GO, HashiCorp Configuration Language}
 \resumeSubItem{Technologies}{: Machine Learning, Deep Learning, AgenticAI, Computer Vision, Kubernetes,  CI/CD,  Terraform, HELM, Spring-boot}
-\resumeSubItem{Tools}{: AWS, TensorFlow, PyTorch, OpenCV, Langchain/LangGraph, Docker, Raspberry Pi, Istio, Kafka, Redis, GitHub Actions}
+\resumeSubItem{Tools}{: AWS, TensorFlow, PyTorch, OpenCV, Langchain/LangGraph, Docker, Raspberry Pi,  Isthio, Kafka, Redis, GitHub Actions}
 \resumeHeadingSkillEnd
-\vspace{-2mm}
+\vspace{0mm}
 
-%----------------------------------------------------------------------------------------
-% Research Paper Section
-%----------------------------------------------------------------------------------------
+%----------------- RESEARCH PAPER --------------------
 \section{\textbf{Research Paper}}
-\vspace{-0.4mm}
 \resumeSubHeadingListStart
+% The blank line before the arguments here is what caused the Runaway Argument error!
 \resumePOR
     {Natural Language Based Autonomous Navigation Vehicle} % Certification Name
     {, \href{https://ieeexplore.ieee.org/document/11118685}{IEEE}} % Issuer
-    {2025} % Date adjusted to match CV
+    {June 2025} % Duration
 \resumeSubHeadingListEnd
-\vspace{-6mm}
+\vspace{-2mm}
 
-%----------------------------------------------------------------------------------------
-% Positions of Responsibility Section
-%----------------------------------------------------------------------------------------
+%----------------- POSITIONS OF RESPONSIBILITY --------------------
 \section{\textbf{Positions of Responsibility}}
-\vspace{-0.4mm}
 \resumeSubHeadingListStart
     \resumePOR{{Backend and Devops}, } % Position
     { Junior Developers} %Club,Event
     {April 2025} %Tenure Period
+    
     \resumePOR{{Mentor}, } % Position
     {AAC (Advance Academic Center)} %Club,Event
     {March 2023} %Tenure Period
 \resumeSubHeadingListEnd
-\vspace{-5mm}
 
 \end{document}
-
