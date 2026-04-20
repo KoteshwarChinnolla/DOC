@@ -10,6 +10,8 @@
 %----------------------------------------------------------------------------------------
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{parskip}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[top=0.55in, bottom=0.60in, left=0.6in, right=0.6in]{geometry}
@@ -18,9 +20,29 @@
 \usepackage{titlesec}
 \usepackage{multicol}
 \usepackage[unicode, draft=false]{hyperref}
-% fontawesome5 not available - using text alternatives
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{ifthen}
+
+\IfFileExists{fontawesome5.sty}{%
+  \usepackage{fontawesome5}
+  \newcommand{\EmailIcon}{\faEnvelope}
+  \newcommand{\PhoneIcon}{\faPhone}
+  \newcommand{\LinkedInIcon}{\faLinkedin}
+  \newcommand{\GitHubIcon}{\faGithub}
+  \newcommand{\WebIcon}{\faGlobe}
+  \newcommand{\XIcon}{\faX}
+  \newcommand{\ExternalLinkIcon}{\faExternalLinkAlt}
+}{%
+  \usepackage{marvosym}
+  \newcommand{\EmailIcon}{\Letter}
+  \newcommand{\PhoneIcon}{\Telefon}
+  \newcommand{\LinkedInIcon}{\Mundus}
+  \newcommand{\GitHubIcon}{\textbf{GH}}
+  \newcommand{\WebIcon}{\Mundus}
+  \newcommand{\XIcon}{\textbf{X}}
+  \newcommand{\ExternalLinkIcon}{$\nearrow$}
+}
 
 %----------------------------------------------------------------------------------------
 %   COLORS & LINKS
@@ -43,13 +65,13 @@
 %----------------------------------------------------------------------------------------
 %   CUSTOM COMMANDS
 %----------------------------------------------------------------------------------------
-\newcommand{\cventry}[4]{%
+\newcommand{\cventry}[5][]{%
   \begin{tabularx}{\linewidth}{@{}X r@{}}
-    \textbf{#1} \textit{\small\color{lightgray}#2} & \small\color{lightgray}#3 \\
+    \textbf{#2} \textit{\small\color{lightgray}#3} & \small\color{lightgray}#4 \ifthenelse{\equal{#1}{}}{}{\hspace{0.3em}\textcolor{accent}{#1}} \\
   \end{tabularx}%
   \vspace{1pt}
   \begin{itemize}[nosep, leftmargin=1.2em, itemsep=2pt, topsep=1pt, label={\small\textbullet}]
-    #4
+    #5
   \end{itemize}
   \vspace{4pt}
 }
@@ -66,7 +88,7 @@
 \newcommand{\skillrow}[2]{%
   \textbf{#1} & \small #2 \\[2pt]
 }
-
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 %----------------------------------------------------------------------------------------
 %   DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -77,29 +99,35 @@
 %   HEADER
 %----------------------------------------------------------------------------------------
 \begin{center}
-  {\LARGE\bfseries Chinnolla Koteshwar}\\[5pt]
+  {\LARGE\bfseries Chinnolla Koteshwar}\\[6pt]
   \small
-  \href{mailto:chinnollakoteshwar@gmail.com}{Email: chinnollakoteshwar@gmail.com} \;$|$\;
-  \href{tel:+916300727875}{Tel: +91-6300727875} \;$|$\;
-  \href{https://www.linkedin.com/in/koteshwar-chinnolla-2065b4253}{LinkedIn: koteshwar-chinnolla} \;$|$\;
-  \href{https://github.com/KoteshwarChinno}{GitHub: KoteshwarChinno} \;$|$\;
-  \href{https://koteshwarchinnolla.github.io/}{Portfolio}
+  \textcolor{accent}{\href{mailto:chinnollakoteshwar@gmail.com}{\EmailIcon chinnollakoteshwar@gmail.com}} \quad
+  \textcolor{accent}{\href{tel:+916300727875}{\PhoneIcon +91 6300727875}} \quad
+  \textcolor{accent}{\href{https://www.linkedin.com/in/koteshwar-chinnolla-2065b4253}{\LinkedInIcon ln/koteshwar-chinnolla}} \quad
+  \textcolor{accent}{\href{https://github.com/KoteshwarChinnolla}{\GitHubIcon KoteshwarChinnolla}} \quad
+  \textcolor{accent}{\href{https://koteshwarchinnolla.github.io/}{\WebIcon koteshwarchinnolla.github.io}} \quad
+%   \textcolor{accent}{\href{https://x.com/Iam_Koteshwar}{\XIcon @Iam_Koteshwar}}
 \end{center}
+%----------------------------------------------------------------------------------------
+%   PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
 
-\vspace{2pt}
+I am an Electronics and Communication Engineering graduate specialization in AIML. My primary research was focused on real-world autonomous systems and cloud-native, reliable software platforms. My work has evolved from early experimentation in machine learning into the design and implementation of applied AI systems that can operate in practical environments. Alongside my academic work, more than one year of industry experience deepened my knowledge of production-scale systems, backend development, system design, and AWS cloud services.
 
 %----------------------------------------------------------------------------------------
-%   SUMMARY & RESEARCH STATEMENT
+%   CURRENT RESEARCH STATEMENT
 %----------------------------------------------------------------------------------------
-\section{Summary \& Research Statement}
+\textbf{Current Research Statement}
 
-Electronics and Communication Engineering graduate specializing in AI/ML, with a focus on real-world autonomous systems and cloud-native software platforms. My work has evolved from early experimentation in machine learning into the design and implementation of applied AI systems that operate in practical environments. Publishing a research paper on \textit{"Natural Language Based Autonomous Navigation Vehicle"} at IEEE ICOCT 2025 strengthened both my technical foundation and research approach. Alongside academic work, over one year of industry experience has deepened my knowledge of production-scale systems, Kubernetes, backend development, and AWS cloud services.
+My current research is on combining attention-based language models with deep reinforcement learning so that autonomous systems can not only understand human intent, but also improve their actions through experience. This can bring significant improvement in tasks such as planning and JSON filling, mainly in the case of my projects, a robotic vehicle and ApiSynIQ. Furthermore, building such a world model will result in faster, lightweight and adaptive agents over time.
 
-\smallskip
-My current research focuses on combining \textbf{attention-based language models with deep reinforcement learning} to build world models that enable autonomous systems to understand human intent and improve decision-making through experience — bringing significant gains to tasks such as planning and JSON filling in robotics and conversational AI systems.
+%----------------------------------------------------------------------------------------
+%   RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+\textbf{Research Interests}
 
-\smallskip
-\textbf{Research Interests:} Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intelligent Agents, Edge AI, Human--Machine Interaction.
+Autonomous Robotics, Natural Language Systems, Reinforcement Learning, Intelligent Agents, Edge AI, Human--Machine Interaction.
 
 %----------------------------------------------------------------------------------------
 %   EDUCATION
@@ -130,63 +158,58 @@ My current research focuses on combining \textbf{attention-based language models
   \textit{\color{lightgray}Matrusri High School} & \small\color{lightgray}9.8\,/\,10 \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%   RESEARCH EXPERIENCE & PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Research Experience \& Publications}
 
-\cventry{Published Paper: Natural Language Based Autonomous Navigation Vehicle}{}{IEEE ICOCT 2025}{
-  \item Designed an autonomous indoor robotic vehicle controlled entirely through natural language commands.
+%----------------------------------------------------------------------------------------
+%   RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+
+\cventry{Published Paper: Natural Language Based Autonomous Navigation Vehicle}{}{IEEE ICOCT 2025}{}{\item Designed an autonomous indoor robotic vehicle controlled entirely through natural language commands.
   \item Combined LLMs, LangChain, LangGraph, A* path planning, Raspberry Pi, and computer vision into a unified system.
-  \item Enabled dynamic task planning, contextual responses, and multi-step navigation; explored how language understanding improves real-world robotic interaction.
+  \item Enabled dynamic task planning, contextual responses, and multi-step navigation. 
+  \item This research paper explored how language understanding improves real-world robotic interaction.
 }
+
 
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \section{Work Experience}
 
-\cventry{Associate Software Engineer -- AI \& DevOps}{Anasol Consultancy Services, Hyderabad}{Apr 2025 -- Present}{
-  \item Built and maintained AI-enabled backend systems for enterprise applications.
+\cventry{Associate Software Engineer -- AI \& DevOps}{Anasol Consultancy Services, Hyderabad}{Apr 2025 -- Present}{}{\item Built and maintained AI-enabled backend systems for enterprise applications.
   \item Worked on recommendation systems and agent-based workflows for internal automation.
   \item Developed scalable infrastructure using AWS, Kubernetes, Terraform, Helm, Redis, Kafka, and microservice design patterns.
   \item Created reusable open-source Terraform modules and Helm charts for production-ready cloud deployments.
 }
 
-\pagebreak
 %----------------------------------------------------------------------------------------
 %   PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
 
-\cventry{ApiSynIQ}{\normalfont\small Go, Python, Java, gRPC, PostgreSQL (pgvector), LangChain, LangGraph}{\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{GitHub}}{
-  \item Built an AI-powered framework that lets users interact with APIs using natural voice or text instead of traditional forms.
+\cventry[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\GitHubIcon}]{ApiSynIQ}{\normalfont\small Go, Python, Java, gRPC, PostgreSQL (pgvector), LangChain, LangGraph}{}{\item Built an AI-powered framework that lets users interact with APIs using natural voice or text instead of traditional forms.
   \item Designed a multi-service architecture to understand user intent, identify the right endpoint, and generate valid API requests automatically.
   \item Implemented a semantic API discovery engine with pgvector and RAG, enabling the system to match human language to the correct backend service.
   \item Created a developer-friendly annotation SDK that turns existing APIs into conversational interfaces with minimal code changes.
 }
 
-\cventry{Natural Language Based Autonomous Navigation Vehicle}{\normalfont\small Python, Raspberry Pi, Arduino, OpenCV, A*, Docker, LLMs}{\href{https://github.com/KoteshwarChinnolla/A_robotic_vehicle}{GitHub}}{
-  \item Developed an autonomous vehicle that interprets spoken or text commands into task-specific navigation workflows in indoor environments.
+\cventry[\href{https://github.com/KoteshwarChinnolla/A_robotic_vehicle}{\GitHubIcon}]{Natural Language Based Autonomous Navigation Vehicle}{\normalfont\small Python, Raspberry Pi, Arduino, OpenCV, A*, Docker, LLMs}{}{\item Developed an autonomous vehicle that interprets spoken or text commands into task-specific navigation workflows in indoor environments.
   \item Integrated LLM-based planning and response modules to interpret user intent, ask clarification questions, and manage multi-step tasks dynamically.
   \item Implemented A* path planning with a custom motion decoder, enabling accurate obstacle-aware navigation and object delivery between locations.
   \item Published the work at IEEE ICOCT 2025 for its approach to combining conversational AI with robotic task execution.
 }
 
-\cventry{Cloud Infrastructure Automation Toolkit}{\normalfont\small Terraform, Helm, Kubernetes, AWS, ArgoCD, Istio}{\href{https://github.com/KoteshwarChinnolla/terraform-modules}{GitHub}}{
-  \item Built reusable Terraform modules and Helm charts to automate cloud infrastructure provisioning and Kubernetes deployments across AWS environments.
+\cventry[\href{https://github.com/KoteshwarChinnolla/terraform-modules}{\GitHubIcon - Terraform} \href{https://github.com/KoteshwarChinnolla/helm-utilities}{\GitHubIcon - HELM}]{Cloud Infrastructure Automation Toolkit}{\normalfont\small Terraform, Helm, Kubernetes, AWS, ArgoCD, Istio}{}{\item Built reusable Terraform modules and Helm charts to automate cloud infrastructure provisioning and Kubernetes deployments across AWS environments.
   \item Designed production-ready templates for EKS, ECS, VPC, RDS, ALB, Kafka, Redis, and microservices, reducing repetitive setup for scalable systems.
   \item Integrated GitOps workflows with ArgoCD and Helm for consistent, version-controlled deployments from infrastructure to application layer.
 }
 
-\cventry{NLP Architecture Evolution Study}{\normalfont\small Python, TensorFlow, PyTorch, Scikit-learn, Transformers}{\href{https://github.com/KoteshwarChinnolla/BERT-Pre-training}{GitHub}}{
-  \item Developed three connected NLP projects covering spam classification, BERT pre-training, and sentiment analysis to understand the evolution from statistical methods to deep contextual learning.
+\cventry[\href{https://github.com/KoteshwarChinnolla/BERT-Pre-training}{\GitHubIcon - BERT } \href{https://github.com/KoteshwarChinnolla/spam-classification-Bow-Tfidf-word_2_vec-ML-LSTM}{\GitHubIcon - NLP Techniques} \href{https://github.com/KoteshwarChinnolla/sentiment-analysis-on-IMDB-using-different-RNN-s-techniques}{\GitHubIcon - RNNs}]{NLP Architecture Evolution Study}{\normalfont\small Python, TensorFlow, PyTorch, Scikit-learn, Transformers}{}{\item Developed three connected NLP projects covering spam classification, BERT pre-training, and sentiment analysis to understand the evolution from statistical methods to deep contextual learning.
   \item Implemented and compared Bag of Words, TF-IDF, Word2Vec, Bi-LSTM, and BERT, observing how each architecture improved language understanding and prediction accuracy.
   \item Built models from the ground up to study internal behavior of each technique rather than treating them as black-box libraries.
 }
 
-\cventry{OpenCV Computer Vision Learning Repository}{\normalfont\small Python, OpenCV, YOLOv8, NumPy}{\href{https://github.com/KoteshwarChinnolla/open-cv}{GitHub}}{
-  \item Built a practical computer vision repository exploring core image processing concepts and real-time object detection workflows.
+\cventry[\href{https://github.com/KoteshwarChinnolla/open-cv}{\GitHubIcon}]{OpenCV Computer Vision Learning Repository}{\normalfont\small Python, OpenCV, YOLOv8, NumPy}{}{\item Built a practical computer vision repository exploring core image processing concepts and real-time object detection workflows.
   \item Developed a vehicle counting system using line-cross detection and object tracking to monitor cars in video streams.
   \item Integrated YOLOv8-based object detection on images and videos to study modern deep learning approaches in computer vision.
 }
@@ -199,45 +222,57 @@ My current research focuses on combining \textbf{attention-based language models
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
   \skillrow{Programming}{Python, C++, Java, Go}
-  \skillrow{AI \& Research}{Deep Learning, NLP, Reinforcement Learning, RAG, LangChain, LangGraph}
+  \skillrow{AI \& Research}{Deep Learning, TensorFlow, PyTorch, OpenCV, keras, NLP, Reinforcement Learning, RAG, LangChain, LangGraph}
   \skillrow{Robotics}{ROS, Raspberry Pi, Arduino, Computer Vision}
   \skillrow{Cloud \& Infrastructure}{AWS, Kubernetes, Terraform, Helm, Docker, Kafka, Redis}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%   ACHIEVEMENTS & EXTRACURRICULARS
+%   LEADERSHIP & ACTIVITIES
 %----------------------------------------------------------------------------------------
-\section{Achievements \& Activities}
-\begin{itemize}[nosep, leftmargin=1em, itemsep=5pt, label=\textbullet]
-    
-    \item \textbf{Mentorship (Advanced Academic Center):} Mentored 4 students in AI/ML, guiding them from initial concepts to successful project implementations and final submissions.
-    
-    \item \textbf{Competitive Hackathons:} Participated in 4 technical hackathons, focusing on AI and healthcare infrastructure.
-    \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt, label=$\circ$]
-        \item \textbf{Winner:} AAC Product Demand Prediction Challenge.
-        \item \textbf{CBIT SUDHEE 23:}  ML-integrated healthcare system.
-        \item \textbf{EPITOME 23:} MedTech.
-        \item \textbf{CHALLENGE ACI:}  Blockchain EHR Management.
-    \end{itemize}
-    
-    \item \textbf{Algorithmic Problem Solving:} Solved \textbf{480+} problems using Java, Python, C++, and Go on \href{https://leetcode.com/u/chinnollakoteshwar/}{LeetCode}.
-    
-
+\section{Leadership \& Activities}
+\begin{itemize}[nosep, leftmargin=1em, itemsep=4pt, label=\textbullet]
+  \item \textbf{Mentorship (Advanced Academic Center):} Mentored 4 students in AI/ML, guiding them from initial concepts to successful project implementations and final submissions.
+  \item \textbf{Problem Solving:} Solved \textbf{480+} problems across Java, Python, C++, and Go \textcolor{accent}{\href{https://leetcode.com/u/chinnollakoteshwar/}{\ExternalLinkIcon}} LeetCode.
 \end{itemize}
 
+%----------------------------------------------------------------------------------------
+%   HACKATHONS
+%----------------------------------------------------------------------------------------
+\section{Hackathons}
+
+\begin{itemize}[nosep, leftmargin=1.2em, itemsep=3pt, topsep=1pt, label=\textbullet]
+  \item Participated in 4 technical hackathons.
+  \item \textbf{Winner:} AAC Product Demand Prediction Challenge.
+  \item \textbf{CBIT SUDHEE 23:} ML-integrated healthcare system.
+  \item \textbf{EPITOME 23:} MedTech.
+  \item \textbf{CHALLENGE ACI:} Blockchain-based Electronic Health Record Management.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%   TRAINING
+%----------------------------------------------------------------------------------------
+\section{Training}
+
+\begin{itemize}[nosep, leftmargin=1.2em, itemsep=2pt, topsep=1pt, label=\textbullet]
+  \item Agentic AI -- Krish Naik Academy.
+  \item AWS Cloud -- AWS Skill Builder.
+  \item Machine Learning -- Udemy.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%   CERTIFICATIONS
+%----------------------------------------------------------------------------------------
 \section{Certifications}
 \begin{tabularx}{\linewidth}{@{}X r@{}}
   \textbf{Language Proficiency – English} & \textbf{2026} \\
   \textit{\color{lightgray}IELTS} & \small\color{lightgray}6.5 \\
 \end{tabularx}
 
-\begin{tabularx}{\linewidth}{@{}X r@{}}
-  \textbf{Agentic AI Foundations} & \textbf{2025} \\
-  \textit{\color{lightgray}Krish Naik} & \small\color{lightgray}Completed \\
-\end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{}X r@{}}
-  \textbf{AWS Cloud Practitioner} & \textbf{2025} \\
+  \textbf{AWS Cloud Practitioner} & \textbf{2024} \\
   \textit{\color{lightgray}AWS Skill Builder} & \small\color{lightgray}Completed \\
 \end{tabularx}
 
