@@ -12,14 +12,13 @@
 %----------------------------------------------------------------------------------------
 \usepackage[T1]{fontenc}          % Use T1 font encoding for better output
 \usepackage[utf8]{inputenc}       % Input encoding for UTF-8
-\usepackage{microtype}            % Improves typography
+\usepackage[expansion=false]{microtype}            % Improves typography, avoid font expansion on non-scalable fonts
 \usepackage{xcolor}               % Color support
 \usepackage{tabularx}             % Extended table environments
 \usepackage{array}                % Enhanced array and tabular functionality
 \usepackage{enumitem}             % Customizable lists
 \usepackage{geometry}             % Page layout
 \usepackage[most]{tcolorbox}      % Colored boxes for sections
-\usepackage{fontawesome5}         % FontAwesome icons
 \usepackage[hidelinks]{hyperref}  % Hyperlinks without borders
 \usepackage{graphicx}             % Include graphics
 
@@ -87,9 +86,9 @@
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 % List start commands
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0.5em]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm,rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=0.5em,itemsep=0.5mm]}
 
 % List end commands
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
@@ -111,8 +110,7 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 % Icon sizing
-\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
-\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+% (FontAwesome icon commands removed to avoid non-scalable font issues.)
 
 % Font options (commented out as not used)
 % \newcommand{\headerfonti}{\fontfamily{phv}\selectfont}
@@ -139,8 +137,9 @@
 %----------------------------------------------------------------------------------------
 \begin{tabularx}{\linewidth}{X r}
   {\LARGE \textbf{\name}} & \href{mailto:\email}{\email}\\
-  Associate Software Engineer &  +91-\phone\\
-  Anasol Consultancy Services & \href{https://www.linkedin.com/in/\linkedin}{linkedin/\linkedin} \\ \roll  \href{https://koteshwarchinnolla.github.io/}{portfolio} & \href{https://github.com/\github}{github.com/\github} \\
+  Associate Software Engineer & +91-\phone\\
+  Anasol Consultancy Services & \href{https://www.linkedin.com/in/\linkedin}{linkedin/\linkedin}\\
+  \href{https://koteshwarchinnolla.github.io/}{portfolio} & \href{https://github.com/\github}{github.com/\github}\\
 \end{tabularx}
 \vspace{2mm}
 \hrule
@@ -175,7 +174,7 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 \resumeSubheading
-    {Anasol Consultancy Services [\href{https://anasol.co.in/}{\faIcon{globe}}]}{Hyderabad, India}
+    {Anasol Consultancy Services}{Hyderabad, India}
     {Associate Software Engineer}{Apr 2025 -- Present}
     \resumeItemListStart
       \item Contributed to production-grade ERP systems (products and software modules) and a job recommendation platform.
@@ -196,7 +195,7 @@
     {ApiSynIQ – Talk to Your APIs}
     {Deep Agents, Go (net/http, Gorilla WebSocket), LangChain, RAG, Spring AI, gRPC, TTS, STT}
     {}
-    {{}[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\textcolor{darkblue}{\faGithub}}]}
+    {{}[\href{https://github.com/KoteshwarChinnolla/ApiSynIQ}{\textcolor{darkblue}{GitHub}}]}
 \resumeItemListStart
     \item Built a voice-driven AI assistant that enables natural language interaction with APIs, eliminating the need for complex UIs by automatically planning API calls and filling parameters.
     \item Implemented Deep Agents for API execution planning and an API-resolver sub-agent using LangChain; enabled inter-service communication via gRPC and integrated RAG in Spring Boot with a reusable Java dependency for seamless adoption in any Java application.
@@ -206,7 +205,7 @@
     {Robotic Vehicle for Autonomous Navigation}
     {Agentic AI, Deep Agents, LangChain, LangGraph, Raspberry Pi, Arduino, Docker}
     {}
-    {{}[\href{https://github.com/KoteshwarChinnolla/A-algorithm-Autonomous-navigatioon-vehicle-.git}{\textcolor{darkblue}{\faGithub}}]}
+    {{}[\href{https://github.com/KoteshwarChinnolla/A-algorithm-Autonomous-navigatioon-vehicle-.git}{\textcolor{darkblue}{GitHub}}]}
 \resumeItemListStart
     \item Developed an autonomous robotic vehicle capable of task planning, human communication, and object transport using natural language instructions.
     \item Implemented A* algorithm for optimal path planning and Deep Agents for natural language understanding, deployed on Raspberry Pi OS with Arduino-based motor control.
@@ -218,8 +217,8 @@
     {}
     {{}}
 \resumeItemListStart
-    \item Maintaining the repository which has production-grade Helm charts for Kafka, Redis, Certificate authorities' [\href{https://github.com/KoteshwarChinnolla/helm-utilities}{\textcolor{darkblue}{\faGithub}}]
-    \item Opensource Repository for managing AWS workloads with Terraform like Kubernetes, S3 buckets, Web Hosting life cycle using Cloud Front, S3 and Route53, etc.. [\href{https://github.com/KoteshwarChinnolla/terraform-modules}{\textcolor{darkblue}{\faGithub}}]
+    \item Maintaining reusable Helm charts for Kafka, Redis, and AWS infrastructure components [\href{https://github.com/KoteshwarChinnolla/helm-utilities}{\textcolor{darkblue}{GitHub}}]
+    \item Managing Terraform repositories for AWS workloads including Kubernetes, S3, CloudFront, and Route53 [\href{https://github.com/KoteshwarChinnolla/terraform-modules}{\textcolor{darkblue}{GitHub}}]
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-8mm}
@@ -232,7 +231,7 @@
 \resumeHeadingSkillStart
 \resumeSubItem{Programming Languages}{: Java, Python, CPP, GO, HashiCorp Configuration Language}
 \resumeSubItem{Technologies}{: Machine Learning, Deep Learning, AgenticAI, Computer Vision, Kubernetes,  CI/CD,  Terraform, HELM, Spring-boot}
-\resumeSubItem{Tools}{: AWS, TensorFlow, PyTorch, OpenCV, Langchain/LangGraph, Docker, Raspberry Pi,  Isthio, Kafka, Redis, GitHub Actions}
+\resumeSubItem{Tools}{: AWS, TensorFlow, PyTorch, OpenCV, Langchain/LangGraph, Docker, Raspberry Pi, Istio, Kafka, Redis, GitHub Actions}
 \resumeHeadingSkillEnd
 \vspace{-2mm}
 
