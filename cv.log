@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.19)  20 APR 2026 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.19)  20 APR 2026 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,178 +573,20 @@ n input line 106.
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd)
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd)
 (C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+72.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.167 ... Navigation Vehicle}{}{IEEE ICOCT 2025}{}
-                                                  {\item Designed an autonom...
-
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.167 ...ion Vehicle}{}{IEEE ICOCT 2025}{}{\item D
-                                                  esigned an autonomous indo...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 167
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.168   \item C
-               ombined LLMs, LangChain, LangGraph, A* path planning, Raspber...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 168
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.169   \item E
-               nabled dynamic task planning, contextual responses, and multi...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 169
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170   \item T
-               his research paper explored how language understanding improv...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 170
-[][]
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...rvices, Hyderabad}{Apr 2025 -- Present}{}
-                                                  {\item Built and maintaine...
-
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...Hyderabad}{Apr 2025 -- Present}{}{\item B
-                                                  uilt and maintained AI-ena...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 179
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180   \item W
-               orked on recommendation systems and agent-based workflows for...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 180
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181   \item D
-               eveloped scalable infrastructure using AWS, Kubernetes, Terra...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 181
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182   \item C
-               reated reusable open-source Terraform modules and Helm charts...
-
-? 
-
-Underfull \hbox (badness 10000) detected at line 182
-[][]
- []
-
-[1
+(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
 
 {C:/Users/EDIFY/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/EDIF
 Y/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/EDIFY/Ap
 pData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}{C:/Users
 /EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}
 {C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5b
-rands0.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-94.
-
-(C:\Users\EDIFY\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
-}]
-! Undefined control sequence.
-\ExternalLinkIcon ->\faExternalLinkAlt 
-                                       
-l.236 .../chinnollakoteshwar/}{\ExternalLinkIcon}}
-                                                   LeetCode.
-? 
-[3] (cv.aux)
+rands0.enc}{C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
+ts1.enc}] [2] [3] (cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -755,11 +597,11 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 Here is how much of TeX's memory you used:
  15762 strings out of 467871
  272259 string characters out of 5418376
- 724559 words of memory out of 5000000
+ 725559 words of memory out of 5000000
  44348 multiletter control sequences out of 15000+600000
  678668 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,9n,84p,1193b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,9n,84p,1193b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5
 /FontAwesome5Brands-Regular.pfb><C:/Users/EDIFY/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/EDIFY/AppDa
@@ -767,7 +609,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/EDIFY/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/EDIFY/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/EDIFY/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-Output written on cv.pdf (3 pages, 162803 bytes).
+Output written on cv.pdf (3 pages, 162901 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
